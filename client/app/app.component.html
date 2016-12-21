@@ -1,0 +1,45 @@
+ 
+
+<!--<div class="ui container">
+    <h1>
+        Seriously Hello {{name}}
+    </h1>
+    <div *ngFor="let val of data">
+        {{val}}
+    </div>
+
+    <button class="ui primary button" (click)="callApi($event)">Call API</button>
+
+    <form action="#" #f="ngForm" (ngSubmit)="callSubmit(f.value, f.valid)" novalidate>
+        <input type="text" placeholder="Type something .." [(ngModel)]="name" name="name_some" />
+        <input type="submit" value="call" />
+    </form>
+</div>-->
+
+<!-- Following Menu -->
+<div class="ui large secondary menu pointing main-menu">
+  <div class="ui container">
+    <a class="toc item">
+      <i class="sidebar icon"></i>
+    </a>
+    <a class="active item" routerLink="/">Home</a>
+    <div class="right menu">
+      <div class="item">
+        <a class="ui button">Log in</a>
+      </div>
+      <div class="item">
+        <a class="ui primary button">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="active item">Home</a>
+  <a class="item">Login</a>
+  <a class="item">Signup</a>
+</div>
+
+
+<router-outlet></router-outlet>

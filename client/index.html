@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/">
+    <title>Angular QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="node_modules/semantic-ui-css/semantic.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/semantic-ui-css/semantic.min.js"></script>
+  </head>
+
+  <body style="background:#f4f8fb none repeat scroll 0 0">
+    <my-app>
+      <div style="background: rgb(27, 28, 29) none repeat scroll 0px 0px; color: white; font-size: 20px; height: 100%;">
+        <div style="position: relative; left : 40%; top:30%">Please wait a second loading...</div>
+      </div>
+    </my-app>
+  </body>
+</html>

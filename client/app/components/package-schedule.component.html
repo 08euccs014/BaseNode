@@ -1,0 +1,77 @@
+{{form_value | json}}
+<div class="ui container content">
+    <div class="ui stackable grid">
+        <div class="ui centered row ">
+            <div class="five wide column">
+
+                <div id="pickup-address">
+                    
+                    <h2>Pickup Address</h2>
+            
+                    <form action="#" #f="ngForm" (ngSubmit)="savePickup(f.value, f.valid)" novalidate>
+                    <div class="ui form">
+                        <!--Address-->
+                        <div class="field">
+                            <label for="address">Address</label>
+                            <input type="text" name="address"  placeholder="Building, Plot-no., Floor etc." [ngModel]="address">
+                        </div>
+
+                        <!--street-->
+                        <div class="field">
+                            <label for="street">Street</label>
+                            <input type="text" name="street"  placeholder="Street" [ngModel]="street">
+                        </div>
+
+                        <div class="two column fields">
+                    
+                            <!--city-->
+                            <div class="field">
+                                <label for="city">City</label>
+                                <input type="text" name="city"  placeholder="City"  [ngModel]="city">
+                            </div>
+
+                            <!--Zipcode-->
+                            <div class="field">
+                                <label for="zipcode">Zipcode</label>
+                                <input type="text" name="zipcode"  placeholder="Zipcode"  [ngModel]="zipcode">
+                            </div>
+                        </div>
+
+                        <div class="two column fields">
+                            <!--State-->
+                            <div class="field">
+                                <label for="state">State</label>
+                                <input type="text" name="state"  placeholder="State"  [ngModel]="state">
+                            </div>
+
+                            <!--country-->
+                            <div class="field">
+                                <label for="country">Country</label>
+                                <input type="text" name="country"  placeholder="country" value="India" disabled>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="ui calendar" id="example1">
+                                <div class="ui input left icon">
+                                    <i class="calendar icon"></i>
+                                    <input type="datetime" placeholder="Date/Time">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="ui center aligned container">
+                            <button class="ui secondary basic  button">
+                                Next <i class="ui icon right arrow"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
